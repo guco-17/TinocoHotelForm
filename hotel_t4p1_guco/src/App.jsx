@@ -105,8 +105,8 @@ function App() {
             <p className="form-hint">Todos los campos son obligatorios.</p>
             {notice && <p className="success-message" role="status">{notice}</p>}
             <div className="actions">
-              <button className="button button-primary" type="submit">Registrar</button>
-              <button className="button button-secondary" type="button" onClick={handleCancel}>Cancelar</button>
+              <button className="button button-primary" type="submit" onClick={() => window.alert('Se presionó el botón Registrar.')}>Registrar</button>
+              <button className="button button-secondary" type="button" onClick={() => { window.alert('Se presionó el botón Cancelar.'); handleCancel() }}>Cancelar</button>
             </div>
           </div>
         </form>
